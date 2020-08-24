@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello, world.</h1>
-      <h2>And hello there {<Person title="test"/>}</h2> 
+      <h2>And hello there {<Person title="test" options={["option1","option2","option3"]}/>}</h2> 
     </div>
   );
 }

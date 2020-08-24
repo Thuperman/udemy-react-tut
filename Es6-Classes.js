@@ -1,4 +1,5 @@
-import { Component } from 'react';
+import React, {Component} from 'react';
+// import { Component } from 'react';
 
 // class Tester extends Component {
 //     render() {
@@ -10,7 +11,6 @@ import { Component } from 'react';
 // }
 
 class Person extends Component {
-    
     constructor(name = 'Anon', age = 0){
         super();
         this.name = name;
@@ -23,11 +23,13 @@ class Person extends Component {
 
     }
     render() {
+        // const options = ['thing one', 'thing two', 'thing three'];
         console.log(this.props)
         return (
             <div>
                 <h2>{user.getGreeting()}</h2>
                 <h2>{this.props.title}</h2>
+                <h2>{this.props.options.length}</h2>
             </div>
             // user.getGreeting()
             // this.props.title
